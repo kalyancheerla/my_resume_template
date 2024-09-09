@@ -1,0 +1,215 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%-------------------------------------------------------------------------------
+% Title            : Curriculum Vitae (cv/resume)
+% Author           : Kalyan Cheerla
+% Description      : My personalized cv/resume.
+%-------------------------------------------------------------------------------
+
+% {{{ Imports and Setup
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage{textcomp}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}[
+    Scale=0.85,
+    ]
+\raggedright
+\usepackage[
+	left=.5in,
+	right=.5in,
+	top=.5in,
+	bottom=.4in,
+	footskip=18pt,
+	% showframe,
+]{geometry}
+
+% ragged justifying
+\usepackage{ragged2e}
+\justifying
+
+% Needed to deal hyperlink
+\usepackage[hidelinks,unicode,pdfpagelabels=false]{hyperref}
+\hypersetup{
+  pdftitle={},
+  pdfauthor={},
+  pdfsubject={},
+  pdfkeywords={}
+}
+
+% Remove indents for itemize items
+\usepackage{enumitem}
+\setlist[itemize]{left=0pt}
+
+% Fancy Header and Footers
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyfoot{} % clear all footer fields
+
+\renewcommand{\headrulewidth}{0pt}  % Remove header rule
+\renewcommand{\footrulewidth}{0pt}  % Remove footer rule
+% }}}
+
+% {{{ Document Begin
+%-------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------
+
+% {{{ Profile
+\vspace*{-30pt}
+\begin{center}
+	{\Huge {\textbf{K}alyan Cheerla}}\\
+	\vspace*{1mm}
+	\href{mailto: kalyancheerla05@gmail.com}{kalyancheerla05@gmail.com} $\cdot$ 
+	\href{tel: +10000000000}{(+1) 000-000-0000} $\cdot$ 
+	\href{https://www.google.com/maps/place/Denton,+TX/}{Denton, TX}\\
+	\href{https://www.linkedin.com/in/kalyancheerla/}{https://www.linkedin.com/in/kalyancheerla} | 
+	\href{https://github.com/kalyancheerla}{https://github.com/kalyancheerla} | 
+	\href{https://kalyanch.co/}{www.kalyanch.co}\
+\end{center}
+% }}}
+
+\vspace*{-2mm}
+
+
+% {{{ Objective
+{\textbf{P}rofessional Summary \hrulefill}\\
+{Diligent and experienced Software Engineer, currently pursuing a master's in
+ Computer Science at UNT, with a thesis on Privacy-Preserving Machine Learning
+ as a Service. Notable contributions include the development of the
+ \textit{MicroSvcsThreatsMapper} extension for an open-source project and
+ a \textit{Wunderkind} excellence award for Production \& Quality Assurance
+ bug fixes at Wipro-Mastercard Authorization.
+ Eager to apply this blend of academic knowledge and practical skills as a
+ Secure Software Engineer.
+}\\
+% }}}
+
+\vspace*{1mm}
+
+
+% {{{ Education
+{\textbf{E}ducation \hrulefill}\\
+% 1
+\textbf{University of North Texas}\hfill {\small Denton, TX}\\
+Master of Science - Computer Science with \textit{GPA: 4.0}. \hfill {\small Jan 2023 - Dec 2024}\\
+
+% 2
+\textbf{Chaitanya Bharathi Institute of Technology}\hfill {\small Hyderabad, India}\\
+Bachelor of Engineering - Electronics and Communication Engineering with \textit{GPA: 3.42}. \hfill {\small Aug 2014 - May 2018}\\
+% }}}
+
+\vspace*{1mm}
+
+
+% {{{ Skills
+{\textbf{S}kills \hrulefill}\\
+\textbf{Programming}: C/C++, Golang basics, Python, C\#/Java, Javascript basics, Shell scripting in Sh/Ksh/Bash, SQL for Sqlite3, MySQL. \\
+\textbf{Operating Systems}: GNU Linux/Ubuntu/RedHat/Arch, FreeBSD, Oracle Solaris, Windows. \\
+\textbf{Subjects}: Software Engineering, Analysis of Algorithms, Data Structures, Computer Security, Computer Forensics, Embedded Systems. \\
+\textbf{Certifications}: Golang at Coursera, DIAT Information Assurance Intermediate certificate. \\
+\textbf{Miscellaneous}: Docker, kubernetes, Ansible, Git, APIs, Vim, CTFs, Cloud (GCP/AWS/Azure), DevOps CI/CD, Integration workflows, Jenkins, SonarQube, GNU Tools, Valgrind, Postman, Nodejs. \\
+% }}}
+
+\vspace*{1mm}
+
+
+% {{{ Experience
+{\textbf{E}xperience \hrulefill}\\
+% 1
+\textbf{University of North Texas} \hfill {\small Denton, TX}\\
+\textit{Graduate Instructional Assistant} at Computer Science and Engineering Department.\hfill {\small Aug 2023 - Dec 2024}\\
+\vspace*{-2.5mm}
+\begin{itemize} \itemsep -1mm
+	\item Working for Secure Software Systems/Development graduate course
+	for grading, proctoring exams, and for administrative support.
+	\item Prepared new course materials like Secure-MPC, Internal attacks in
+	Kubernetes assignments and their lab environment setups on VPS.
+	\item Modified existing assignments to meet with new technological
+	advancements like upgrading old Ubuntu VMs, Dockerizing lab VMs, etc.
+	\item Conducted weekly lab sessions to help out students in completing these
+	Cybersecurity lab assignments and help them suceed in the course.
+	\item Tutored students and led individual and group discussions regarding
+	threat modeling, risk assessment, API security, and many other topics that
+	are present in the course syllabus.
+\end{itemize}
+
+% 2
+\vspace*{-2mm}
+\textbf{Wipro Technologies Ltd. }{(Mastercard Authorization)} \hfill {\small Chennai, India}\\
+\textit{Project Engineer (Unix Application Developer)} \hfill {\small May 2018 - Jan 2021}\\
+\vspace*{-2.5mm}
+\begin{itemize} \itemsep -1mm
+	\item Collaborated in an agile team at Mastercard Authorization on critical
+	banking software development, addressing defects and ensuring timely,
+	quality code delivery for projects including New China-Vietnam Mastercard
+	infrastructure, Addition of Payment Transaction Types \& Merchant Category
+	Codes, C-JSON library - Jansson integration, and others.
+	\item Automated several mundane tasks, including a report generator for
+	Bitbucket pull requests, a Docker-based Flask file server called
+	throwaway-file-server, and an auto unit test case test-fixture generator to reduce effort.
+	\item Received Wunderkind award for my continued valued contributions,
+	and quick production and Quality Assurance defect resolutions.
+\end{itemize}
+% }}}
+
+\vspace*{-2mm}
+
+
+% {{{ Projects
+{\textbf{P}rojects \hrulefill}\\
+
+{\textbf{MedVoyage: Squad8's full-fledged webapp for Doctor appointment booking |}}
+\href{https://github.com/kalyancheerla/MedVoyage}{\small\sl~github.com/kalyancheerla/MedVoyage}\\
+\vspace*{-.5mm}
+{\small {\sl Django, GCP, GitHub CI/CD, Docker, DNS Porkbun, PERT} \hfill Aug 2023 - Dec 2023}\\
+\vspace*{-2.5mm}
+\begin{itemize} \itemsep -1mm
+	\item Led a team comprising eight individuals as Project Manager in the design, development, and testing phases of a Python Django web application aimed at streamlining clinical appointment booking and tracking processes.
+	\item Coordinated tasks, ensured seamless collaboration among team members, and achieved milestones within the specified timeframe through Trello Boards for application management, GitHub for version controlling, and Google Cloud Platform for Deployment.
+	\item Automated deployments using shell scripts on Docker containers in an GCP VPS, and integrated with GitHub Actions to perform Unit testing and pushing notifications on Discord.
+\end{itemize}
+\vspace*{-2mm}
+
+{\textbf{Microsoft Office Visual Basic Script Macros - Ransomware Simulation |}}
+\href{https://github.com/kalyancheerla/MSMacro\_RansomSim}{\small\sl~github.com/kalyancheerla/MSMacro\_RansomSim}\\
+\vspace*{-.5mm}
+{\small {\sl Python, Powershell, Visual Basic, MS Word, RSA, AES, OpenSSL} \hfill Aug 2023 - Dec 2023}\\
+\vspace*{-2.5mm}
+\begin{itemize} \itemsep -1mm
+	\item Led the Ransomware Simulation project, encompassing all components from action and infection to monitoring, detection, and mitigation/countermeasures, and coded major components to ensure project success.
+	\item Coded the action component using a hybrid encryption method, where files are encrypted with an AES symmetric key, which is then encrypted using a pre-generated RSA public key and appended to the encrypted file.
+	\item Created a malicious Word document containing a Visual Basic macro function with a PowerShell one-liner to fetch the action component executable and perform the ransomware encryption and delivered it as an attachment via a spear-phishing email.
+\end{itemize}
+\vspace*{-2mm}
+
+{\textbf{Threat Modeling made easy for Microservices: A .NET/C\# extension to TMS |}}
+\href{https://github.com/kalyancheerla/threatsmanager/tree/MicroSvcsThreatsMapper\_Tool/Tools/MicroSvcsThreatsMapper}{\small\sl~github.com/kalyancheerla/threatsmanager}\\
+\vspace*{-.5mm}
+{\small {\sl C\#, .NET, Visual Studio, Nuget, Open-Source Software, Git, GitHub} \hfill Jan 2023 - Apr 2023}\\
+\vspace*{-2.5mm}
+\begin{itemize} \itemsep -1mm
+	\item Coded a Threats Manager Studio extension named MicroSvcsThreatsMapper to generate automated threat models for microservice architectural apps like OpenShift Kubernetes Clusters.
+	\item Created an MSI installer build instructions file and fully documented all steps required for installation and use.
+\end{itemize}
+\vspace*{-2mm}
+% }}}
+
+% {{{ Awards/Achievements
+{\textbf{A}wards/\textbf{A}chievements \hrulefill}\\
+{\textbf{Prominent member of Cybersecurity Club} at UNT \hfill {\small 2023}}\\
+{\textbf{Wunderkind Award} by Wipro Ltd., Chennai \hfill {\small May 2020}}\\
+{\textbf{Head of Robotics Club} at CBIT, Hyderabad \hfill {\small 2018}}\\
+{\textbf{Synapse Web Designer} at ECE Dept., CBIT, Hyderabad \hfill {\small 2018}}\\
+{\textbf{AIR 591} achieved in JEE(Mains) B. Arch. \hfill {\small 2014}}\\
+%{\textbf{AIR 2049} achieved in A.P. EAMCET exam \hfill {\small 2014}}\\
+%{\textbf{AIR 30} achieved in AMTI Junior level final test \hfill {\small 2011}}\\
+% }}}
+
+%-------------------------------------------------------------------------------
+\end{document}
+%-------------------------------------------------------------------------------
+% }}}
